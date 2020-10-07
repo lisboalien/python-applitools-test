@@ -6,6 +6,7 @@ verify_ssl = true
 [dev-packages]
 pylama = "*"
 autopep8 = "*"
+pytest = "*"
 
 [packages]
 eyes-selenium = "*"
