@@ -10,6 +10,7 @@ pytest = "*"
 
 [packages]
 eyes-selenium = "*"
+assertpy = "*"
 
 [requires]
 python_version = "3.8"

@@ -1,6 +1,7 @@
-from automation.tests.base_test import BaseTest
+from automation.tests.conftest import *
 
-class HelloWorldTest(BaseTest):
 
-    def test_hello_world(self):
-        pass
+def test_hello_world(browser, eyes):
+    validate_window(browser, eyes, tag='hello_world')
+    browser.find_element_by_css_selector('button').click()
+    validate_window(browser, eyes, 'click_me')
